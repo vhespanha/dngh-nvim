@@ -2,7 +2,7 @@
 local M = vim.json.decode(
   [=[{
   "canvasDefaultTransparent": "rgba(13,17,23,0)",
-  "pageHeaderBg": "#0d1117",
+  "pageHeaderBg": "#0f0f0f",
   "marketingIcon": {
     "primary": "#79c0ff",
     "secondary": "#1f6feb"
@@ -26,7 +26,7 @@ local M = vim.json.decode(
       "numBg": "rgba(56,139,253,0.4)"
     },
     "expander": {
-      "icon": "#848d97"
+      "icon": "#7d8590"
     },
     "selectedLineHighlightMixBlendMode": "screen"
   },
@@ -40,7 +40,7 @@ local M = vim.json.decode(
   },
   "prettylights": {
     "syntax": {
-      "comment": "#8b949e",
+      "comment": "#6a737d",
       "constant": "#79c0ff",
       "entity": "#d2a8ff",
       "storageModifierImport": "#c9d1d9",
@@ -67,25 +67,25 @@ local M = vim.json.decode(
       "markupIgnoredText": "#c9d1d9",
       "markupIgnoredBg": "#1158c7",
       "metaDiffRange": "#d2a8ff",
-      "brackethighlighterAngle": "#8b949e",
-      "sublimelinterGutterMark": "#484f58",
+      "brackethighlighterAngle": "#6a737d",
+      "sublimelinterGutterMark": "#2A2B2C",
       "constantOtherReferenceLink": "#a5d6ff"
     }
   },
   "codemirror": {
     "text": "#e6edf3",
-    "bg": "#0d1117",
-    "guttersBg": "#0d1117",
-    "guttermarkerText": "#0d1117",
+    "bg": "#0f0f0f",
+    "guttersBg": "#0f0f0f",
+    "guttermarkerText": "#0f0f0f",
     "guttermarkerSubtleText": "#6e7681",
-    "linenumberText": "#848d97",
+    "linenumberText": "#7d8590",
     "cursor": "#e6edf3",
     "selectionBg": "rgba(56,139,253,0.4)",
     "activelineBg": "rgba(110,118,129,0.1)",
     "matchingbracketText": "#e6edf3",
-    "linesBg": "#0d1117",
+    "linesBg": "#0f0f0f",
     "syntax": {
-      "comment": "#8b949e",
+      "comment": "#6a737d",
       "constant": "#79c0ff",
       "entity": "#d2a8ff",
       "keyword": "#ff7b72",
@@ -100,34 +100,34 @@ local M = vim.json.decode(
     "runBorderWidth": "1px",
     "containerBorderWidth": "1px",
     "textPrimary": "#e6edf3",
-    "textSecondary": "#848d97",
+    "textSecondary": "#7d8590",
     "textLink": "#2f81f7",
-    "btnIcon": "#848d97",
+    "btnIcon": "#7d8590",
     "btnHoverIcon": "#e6edf3",
     "btnHoverBg": "rgba(110,118,129,0.1)",
-    "inputText": "#848d97",
+    "inputText": "#7d8590",
     "inputPlaceholderText": "#6e7681",
     "inputFocusText": "#e6edf3",
-    "inputBg": "#161b22",
+    "inputBg": "#2A2B2C",
     "inputShadow": "0 0 0 1px (obj) => (0, get_1.default)(obj, path)",
     "donutError": "#f85149",
     "donutPending": "#d29922",
     "donutSuccess": "#2ea043",
-    "donutNeutral": "#8b949e",
+    "donutNeutral": "#6a737d",
     "dropdownText": "#e6edf3",
-    "dropdownBg": "#161b22",
+    "dropdownBg": "#2A2B2C",
     "dropdownBorder": "#30363d",
     "dropdownShadow": "rgba(1,4,9,0.3)",
     "dropdownHoverText": "#e6edf3",
     "dropdownHoverBg": "rgba(110,118,129,0.1)",
     "dropdownBtnHoverText": "#e6edf3",
     "dropdownBtnHoverBg": "rgba(110,118,129,0.1)",
-    "scrollbarThumbBg": "rgba(110,118,129,0.4)",
-    "headerLabelText": "#848d97",
+    "scrollbarThumbBg": "#2A2B2C66",
+    "headerLabelText": "#7d8590",
     "headerLabelOpenText": "#e6edf3",
     "headerBorder": "#21262d",
-    "headerIcon": "#848d97",
-    "lineText": "#848d97",
+    "headerIcon": "#7d8590",
+    "lineText": "#7d8590",
     "lineNumText": "#6e7681",
     "lineTimestampText": "#6e7681",
     "lineHoverBg": "rgba(110,118,129,0.1)",
@@ -136,25 +136,25 @@ local M = vim.json.decode(
     "lineDtFmText": "#ffffff",
     "lineDtFmBg": "#9e6a03",
     "gateBg": "rgba(187,128,9,0.15)",
-    "gateText": "#848d97",
+    "gateText": "#7d8590",
     "gateWaitingText": "#d29922",
-    "stepHeaderOpenBg": "#161b22",
+    "stepHeaderOpenBg": "#2A2B2C",
     "stepErrorText": "#f85149",
     "stepWarningText": "#d29922",
-    "loglineText": "#848d97",
+    "loglineText": "#7d8590",
     "loglineNumText": "#6e7681",
     "loglineDebugText": "#a371f7",
-    "loglineErrorText": "#848d97",
+    "loglineErrorText": "#7d8590",
     "loglineErrorNumText": "#6e7681",
     "loglineErrorBg": "rgba(248,81,73,0.1)",
-    "loglineWarningText": "#848d97",
+    "loglineWarningText": "#7d8590",
     "loglineWarningNumText": "#d29922",
     "loglineWarningBg": "rgba(187,128,9,0.15)",
     "loglineCommandText": "#2f81f7",
     "loglineSectionText": "#3fb950",
     "ansi": {
-      "black": "#0d1117",
-      "blackBright": "#161b22",
+      "black": "#0f0f0f",
+      "blackBright": "#2A2B2C",
       "white": "#b1bac4",
       "whiteBright": "#b1bac4",
       "gray": "#6e7681",
@@ -173,9 +173,9 @@ local M = vim.json.decode(
     }
   },
   "project": {
-    "headerBg": "#0d1117",
-    "sidebarBg": "#161b22",
-    "gradientIn": "#161b22",
+    "headerBg": "#0f0f0f",
+    "sidebarBg": "#2A2B2C",
+    "gradientIn": "#2A2B2C",
     "gradientOut": "rgba(22,27,34,0)"
   },
   "mktg": {
@@ -199,7 +199,7 @@ local M = vim.json.decode(
     "border": "rgba(240,246,252,0.1)",
     "stackFade": "#30363d",
     "stackFadeMore": "#21262d",
-    "childShadow": "0 0 0 2px #0d1117"
+    "childShadow": "0 0 0 2px #0f0f0f"
   },
   "topicTag": {
     "border": "rgba(0,0,0,0)"
@@ -208,7 +208,7 @@ local M = vim.json.decode(
     "border": "rgba(0,0,0,0)"
   },
   "selectMenu": {
-    "backdropBorder": "#484f58",
+    "backdropBorder": "#2A2B2C",
     "tapHighlight": "rgba(48,54,61,0.5)",
     "tapFocusBg": "#0c2d6b"
   },
@@ -218,19 +218,19 @@ local M = vim.json.decode(
   },
   "header": {
     "text": "rgba(255,255,255,0.7)",
-    "bg": "#161b22",
-    "divider": "#8b949e",
+    "bg": "#2A2B2C",
+    "divider": "#6a737d",
     "logo": "#f0f6fc"
   },
   "headerSearch": {
-    "bg": "#0d1117",
+    "bg": "#0f0f0f",
     "border": "#30363d"
   },
   "sidenav": {
     "selectedBg": "#21262d"
   },
   "menu": {
-    "bgActive": "#161b22"
+    "bgActive": "#2A2B2C"
   },
   "input": {
     "disabledBg": "rgba(110,118,129,0)"
@@ -239,7 +239,7 @@ local M = vim.json.decode(
     "badgeBg": "#21262d"
   },
   "ansi": {
-    "black": "#484f58",
+    "black": "#2A2B2C",
     "blackBright": "#6e7681",
     "white": "#b1bac4",
     "whiteBright": "#ffffff",
@@ -264,10 +264,10 @@ local M = vim.json.decode(
     "shadow": "0 0 transparent",
     "insetShadow": "0 0 transparent",
     "hoverBg": "#30363d",
-    "hoverBorder": "#8b949e",
+    "hoverBorder": "#6a737d",
     "activeBg": "hsla(212,12%,18%,1)",
     "activeBorder": "#6e7681",
-    "selectedBg": "#161b22",
+    "selectedBg": "#2A2B2C",
     "counterBg": "#30363d",
     "primary": {
       "text": "#ffffff",
@@ -298,7 +298,7 @@ local M = vim.json.decode(
       "selectedBorder": "rgba(240,246,252,0.1)",
       "selectedShadow": "0 0 transparent",
       "disabledText": "rgba(88,166,255,0.5)",
-      "disabledBg": "#0d1117",
+      "disabledBg": "#0f0f0f",
       "disabledCounterBg": "rgba(31,111,235,0.05)",
       "counterBg": "rgba(5,29,77,0.2)",
       "hoverCounterFg": "#58a6ff",
@@ -319,7 +319,7 @@ local M = vim.json.decode(
       "selectedBorder": "#ff7b72",
       "selectedShadow": "0 0 transparent",
       "disabledText": "rgba(248,81,73,0.5)",
-      "disabledBg": "#0d1117",
+      "disabledBg": "#0f0f0f",
       "disabledCounterBg": "rgba(218,54,51,0.05)",
       "counterBg": "rgba(73,2,2,0.2)",
       "icon": "#f85149",
@@ -329,12 +329,12 @@ local M = vim.json.decode(
     },
     "inactive": {
       "bg": "#21262d",
-      "text": "#8b949e"
+      "text": "#6a737d"
     }
   },
   "underlinenav": {
     "icon": "#6e7681",
-    "borderHover": "rgba(110,118,129,0.4)"
+    "borderHover": "#2A2B2C66"
   },
   "actionListItem": {
     "inlineDivider": "rgba(48,54,61,0.48)",
@@ -354,9 +354,9 @@ local M = vim.json.decode(
   "switchTrack": {
     "bg": "rgba(110,118,129,0.1)",
     "hoverBg": "hsla(215,8%,72%,0.1)",
-    "activeBg": "rgba(110,118,129,0.4)",
+    "activeBg": "#2A2B2C66",
     "disabledBg": "#21262d",
-    "fg": "#848d97",
+    "fg": "#7d8590",
     "disabledFg": "#010409",
     "border": "rgba(0,0,0,0)",
     "checked": {
@@ -369,19 +369,19 @@ local M = vim.json.decode(
     }
   },
   "switchKnob": {
-    "bg": "#0d1117",
+    "bg": "#0f0f0f",
     "border": "#606771",
-    "disabledBg": "#161b22",
+    "disabledBg": "#2A2B2C",
     "checked": {
-      "bg": "#0d1117",
-      "disabledBg": "#161b22",
+      "bg": "#0f0f0f",
+      "disabledBg": "#2A2B2C",
       "border": "rgba(31,111,235,0.35)"
     }
   },
   "segmentedControl": {
     "bg": "rgba(110,118,129,0.1)",
     "button": {
-      "bg": "#0d1117",
+      "bg": "#0f0f0f",
       "hover": {
         "bg": "#30363d"
       },
@@ -398,20 +398,20 @@ local M = vim.json.decode(
       "hoverBg": "rgba(177,186,196,0.12)"
     },
     "directory": {
-      "fill": "#848d97"
+      "fill": "#7d8590"
     }
   },
   "fg": {
     "default": "#e6edf3",
-    "muted": "#848d97",
+    "muted": "#7d8590",
     "subtle": "#6e7681",
     "onEmphasis": "#ffffff"
   },
   "canvas": {
-    "default": "#0d1117",
-    "overlay": "#161b22",
+    "default": "#0f0f0f",
+    "overlay": "#2A2B2C",
     "inset": "#010409",
-    "subtle": "#161b22"
+    "subtle": "#2A2B2C"
   },
   "border": {
     "default": "#30363d",
@@ -427,7 +427,7 @@ local M = vim.json.decode(
   "neutral": {
     "emphasisPlus": "#6e7681",
     "emphasis": "#6e7681",
-    "muted": "rgba(110,118,129,0.4)",
+    "muted": "#2A2B2C66",
     "subtle": "rgba(110,118,129,0.1)"
   },
   "accent": {
@@ -486,7 +486,7 @@ local M = vim.json.decode(
   },
   "primer": {
     "fg": {
-      "disabled": "#484f58"
+      "disabled": "#2A2B2C"
     },
     "canvas": {
       "backdrop": "rgba(1,4,9,0.8)",
@@ -508,13 +508,13 @@ local M = vim.json.decode(
       "#f0f6fc",
       "#c9d1d9",
       "#b1bac4",
-      "#8b949e",
+      "#6a737d",
       "#6e7681",
-      "#484f58",
+      "#2A2B2C",
       "#30363d",
       "#21262d",
-      "#161b22",
-      "#0d1117"
+      "#2A2B2C",
+      "#0f0f0f"
     ],
     "blue": [
       "#cae8ff",
