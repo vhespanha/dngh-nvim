@@ -49,9 +49,9 @@ local M = vim.json.decode(
       "string": "#a5d6ff",
       "variable": "#ffa657",
       "brackethighlighterUnmatched": "#f85149",
-      "invalidIllegalText": "#f0f6fc",
+      "invalidIllegalText": "#e6edf3",
       "invalidIllegalBg": "#8e1519",
-      "carriageReturnText": "#f0f6fc",
+      "carriageReturnText": "#e6edf3",
       "carriageReturnBg": "#b62324",
       "stringRegexp": "#7ee787",
       "markupList": "#f2cc60",
@@ -220,7 +220,7 @@ local M = vim.json.decode(
     "text": "rgba(255,255,255,0.7)",
     "bg": "#2A2B2C",
     "divider": "#6a737d",
-    "logo": "#f0f6fc"
+    "logo": "#e6edf3"
   },
   "headerSearch": {
     "bg": "#0f0f0f",
@@ -505,7 +505,7 @@ local M = vim.json.decode(
     "black": "#010409",
     "white": "#ffffff",
     "gray": [
-      "#f0f6fc",
+      "#e6edf3",
       "#c9d1d9",
       "#b1bac4",
       "#6a737d",
