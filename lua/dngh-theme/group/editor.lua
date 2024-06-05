@@ -19,6 +19,7 @@ function M.get(spec, config)
   end
 
   local c = spec.palette
+  local sts_bg = C.from_hex(spec.bg0):blend(C.from_hex(c.blue.base), 0.7):to_css()
 
  -- stylua: ignore start
  local groups = {
@@ -79,6 +80,8 @@ function M.get(spec, config)
     SpellCap        = { sp = spec.diag.warn, style = 'undercurl' }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     SpellLocal      = { sp = spec.diag.info, style = 'undercurl' }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     SpellRare       = { sp = spec.diag.info, style = 'undercurl' }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
+    StatusLine      = { fg = spec.bg0, bg = sts_bg }, -- status line of current window
+    StatusLineNC    = { fg = spec.fg3, bg = spec.bg0 }, -- status lines of not-current windows Note: if this is equal to 'StatusLine' Vim will use '^^^' in the status line of the current window.
 
     TabLine         = { fg = spec.fg2, bg = spec.bg2 }, -- tab pages line, not active tab page label
     TabLineFill     = { bg = spec.bg0 }, -- tab pages line, where there are no labels
