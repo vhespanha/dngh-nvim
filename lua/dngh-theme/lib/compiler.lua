@@ -1,8 +1,8 @@
 ---@diagnostic disable: need-check-nil
 
-local config = require('github-theme.config')
-local util = require('github-theme.util')
-local parse_styles = require('github-theme.lib.highlight').parse_style
+local config = require('dngh-theme.config')
+local util = require('dngh-theme.util')
+local parse_styles = require('dngh-theme.lib.highlight').parse_style
 local fmt = string.format
 
 local M = {}
@@ -29,8 +29,8 @@ end
 function M.compile(opts)
   opts = opts or {}
   opts.theme = opts.theme or config.theme
-  local spec = require('github-theme.spec').load(opts.theme)
-  local groups = require('github-theme.group').from(spec)
+  local spec = require('dngh-theme.spec').load(opts.theme)
+  local groups = require('dngh-theme.group').from(spec)
   local background = spec.palette.meta.light and 'light' or 'dark'
 
   local lines = {
@@ -49,7 +49,7 @@ vim.o.background = "%s"
   }
 
   if config.options.terminal_colors then
-    local terminal = require('github-theme.group.terminal').get(spec)
+    local terminal = require('dngh-theme.group.terminal').get(spec)
     for k, v in pairs(terminal) do
       table.insert(lines, fmt([[vim.g.%s = "%s"]], k, v))
     end
@@ -76,7 +76,7 @@ vim.o.background = "%s"
   util.ensure_dir(output_path)
 
   local file
-  if vim.g.github_theme_debug then
+  if vim.g.dngh_theme_debug then
     file = io.open(output_file .. '.lua', 'wb')
     file:write(table.concat(lines, '\n'))
     file:close()
@@ -86,10 +86,10 @@ vim.o.background = "%s"
 
   local f = loadstring(table.concat(lines, '\n'), '=')
   if not f then
-    local tmpfile = util.join_paths(util.get_tmp_dir(), 'github_theme_error.lua')
-    require('github-theme.lib.log').error(
+    local tmpfile = util.join_paths(util.get_tmp_dir(), 'dngh_theme_error.lua')
+    require('dngh-theme.lib.log').error(
       fmt(
-        [[There is an error in your github-theme config.
+        [[There is an error in your dngh-theme config.
 You can open '%s' for debugging.
 
 If you think this is a bug, kindly open an issue and attach '%s' file.

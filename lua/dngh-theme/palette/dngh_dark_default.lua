@@ -1,11 +1,11 @@
-local C = require('github-theme.lib.color')
+local C = require('dngh-theme.lib.color')
 
 local meta = {
-  name = 'github_dark_default',
+  name = 'dngh_dark_default',
   light = false,
 }
 
-local primitives = require('github-theme.palette.primitives.dark')
+local primitives = require('dngh-theme.palette.primitives.dark')
 
 local pl = primitives.prettylights
 local scale = primitives.scale

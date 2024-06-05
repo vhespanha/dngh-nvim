@@ -1,6 +1,6 @@
 local function reload()
   for name, _ in pairs(package.loaded) do
-    if name:match('^github-theme') then
+    if name:match('^dngh-theme') then
       if
         not name:match('config')
         and not name:match('deprecation')

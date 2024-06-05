@@ -1,4 +1,4 @@
-local config = require('github-theme.config')
+local config = require('dngh-theme.config')
 
 local M = {
   checked_autocmds = false,
@@ -11,7 +11,7 @@ M.set_autocmds = function()
 
   local group = vim.api.nvim_create_augroup(config.theme, { clear = false })
 
-  -- Delete the github-theme autocmds when the theme changes to something else
+  -- Delete the dngh-theme autocmds when the theme changes to something else
   vim.api.nvim_create_autocmd('ColorScheme', {
     pattern = '*',
     group = group,

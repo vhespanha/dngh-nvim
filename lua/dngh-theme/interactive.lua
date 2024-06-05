@@ -1,4 +1,4 @@
-local util = require('github-theme.util')
+local util = require('dngh-theme.util')
 local cmd = util.is_nvim and vim.cmd or vim.command
 local fmt = string.format
 
@@ -9,11 +9,11 @@ local function get_filetype()
 end
 
 function M.attach()
-  vim.g.github_theme_debug = true
+  vim.g.dngh_theme_debug = true
   cmd([[
     augroup GithubThemeInteractiveAugroup
       autocmd!
-      autocmd BufWritePost <buffer> lua require("github-theme.interactive").execute()
+      autocmd BufWritePost <buffer> lua require("dngh-theme.interactive").execute()
     augroup END
   ]])
 end
@@ -22,8 +22,8 @@ function M.execute()
   local source_method = get_filetype() == 'lua' and 'luafile' or 'source'
   local name = vim['g'] and vim.g.colors_name or vim.eval('g:colors_name')
 
-  require('github-theme.config').reset()
-  require('github-theme.override').reset()
+  require('dngh-theme.config').reset()
+  require('dngh-theme.override').reset()
   cmd(fmt(
     [[
       %s %%

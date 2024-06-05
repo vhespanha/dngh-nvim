@@ -1,5 +1,5 @@
-local collect = require('github-theme.lib.collect')
-local template = require('github-theme.util.template')
+local collect = require('dngh-theme.lib.collect')
+local template = require('dngh-theme.util.template')
 
 --#region Types
 
@@ -80,14 +80,14 @@ local function override(spec, palette, ovr)
 end
 
 function M.load(name)
-  local ovr = require('github-theme.override').specs
+  local ovr = require('dngh-theme.override').specs
 
   local function apply_ovr(key, spec, palette)
     return ovr[key] and override(spec, palette, ovr[key]) or spec
   end
 
   if name then
-    local palette = require('github-theme.palette').load(name)
+    local palette = require('dngh-theme.palette').load(name)
     local spec = palette.generate_spec(palette)
     spec = apply_ovr('all', spec, palette)
     spec = apply_ovr(name, spec, palette)
@@ -95,9 +95,9 @@ function M.load(name)
     return spec
   else
     local result = {}
-    local themes = require('github-theme.palette').themes
+    local themes = require('dngh-theme.palette').themes
     for _, mod in ipairs(themes) do
-      local palette = require('github-theme.palette').load(mod)
+      local palette = require('dngh-theme.palette').load(mod)
       local spec = palette.generate_spec(palette)
       spec = apply_ovr('all', spec, palette)
       spec = apply_ovr(mod, spec, palette)

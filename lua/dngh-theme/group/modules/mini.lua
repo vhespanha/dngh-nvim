@@ -1,6 +1,6 @@
 -- https://github.com/simrat39/lsp-trouble.nvim
 
-local C = require('github-theme.lib.color')
+local C = require('dngh-theme.lib.color')
 
 local M = {}
 

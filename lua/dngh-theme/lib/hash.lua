@@ -1,4 +1,4 @@
-local bitop = bit or bit32 or require('github-theme.lib.native_bit')
+local bitop = bit or bit32 or require('dngh-theme.lib.native_bit')
 
 -- https://theartincode.stanis.me/008-djb2/
 local function djb2(s)

@@ -1,4 +1,4 @@
-local collect = require('github-theme.lib.collect')
+local collect = require('dngh-theme.lib.collect')
 
 local store = {
   palettes = {},
@@ -15,7 +15,7 @@ local function reset()
 end
 
 local function hash()
-  local hash = require('github-theme.lib.hash')(store)
+  local hash = require('dngh-theme.lib.hash')(store)
   return hash and hash or 0
 end
 

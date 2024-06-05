@@ -4,10 +4,10 @@ function M.get(spec, config, opts)
   -- TODO: Consider refactoring this out once the primitives are finished
   --       being integrated.
   local primitives = require(
-    'github-theme.palette.primitives.'
-      .. require('github-theme.config').theme
-        :gsub('^github_(.-)_default$', '%1')
-        :gsub('^github_(.-)$', '%1')
+    'dngh-theme.palette.primitives.'
+      .. require('dngh-theme.config').theme
+        :gsub('^dngh_(.-)_default$', '%1')
+        :gsub('^dngh_(.-)$', '%1')
   )
 
   local pl = primitives.prettylights
@@ -40,7 +40,7 @@ function M.get(spec, config, opts)
   })
 
   if vim.treesitter.highlighter.hl_map then
-    require('github-theme.lib.log').warn([[
+    require('dngh-theme.lib.log').warn([[
 nvim-treesitter integration requires neovim 0.8
 If you want to stay on nvim 0.7, disable the module, or track on 'v0.0.x' branch.
 ]])

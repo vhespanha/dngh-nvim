@@ -1,11 +1,11 @@
-local collect = require('github-theme.lib.collect')
-local util = require('github-theme.util')
+local collect = require('dngh-theme.lib.collect')
+local util = require('dngh-theme.util')
 
-local M = { theme = 'github_dark', has_options = false }
+local M = { theme = 'dngh_dark', has_options = false }
 
 local defaults = {
   compile_file_suffix = '_compiled',
-  compile_path = util.join_paths(util.cache_home, 'github-theme'),
+  compile_path = util.join_paths(util.cache_home, 'dngh-theme'),
   hide_end_of_buffer = true,
   hide_nc_statusline = true,
   transparent = false,
@@ -106,7 +106,7 @@ function M.get_compiled_info(opts)
 end
 
 function M.hash()
-  local hash = require('github-theme.lib.hash')(M.options)
+  local hash = require('dngh-theme.lib.hash')(M.options)
   return hash and hash or 0
 end
 

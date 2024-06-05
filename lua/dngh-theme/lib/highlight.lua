@@ -1,4 +1,4 @@
-local util = require('github-theme.util')
+local util = require('dngh-theme.util')
 local fmt = string.format
 
 local cmd = util.is_nvim and vim.cmd or vim.command

@@ -1,10 +1,10 @@
-local collect = require('github-theme.lib.collect')
-local config = require('github-theme.config')
+local collect = require('dngh-theme.lib.collect')
+local config = require('dngh-theme.config')
 
 local M = {}
 
 M.themes = {
-  'github_dark_default',
+  'dngh_dark_default',
 }
 
 local function override(color, ovr)
@@ -15,7 +15,7 @@ local function override(color, ovr)
 end
 
 function M.load(name)
-  local ovr = require('github-theme.override').palettes
+  local ovr = require('dngh-theme.override').palettes
 
   local function apply_ovr(key, palette)
     return ovr[key] and override(palette, ovr[key]) or palette
@@ -23,8 +23,8 @@ function M.load(name)
 
   if name then
     local valid = collect.contains(M.themes, name)
-    local raw = valid and require('github-theme.palette.' .. name)
-      or require('github-theme.palette.' .. config.theme)
+    local raw = valid and require('dngh-theme.palette.' .. name)
+      or require('dngh-theme.palette.' .. config.theme)
     local palette = raw.palette
     palette = apply_ovr('all', palette)
     palette = apply_ovr(name, palette)
@@ -35,7 +35,7 @@ function M.load(name)
   else
     local result = {}
     for _, mod in ipairs(M.themes) do
-      local raw = require('github-theme.palette.' .. mod)
+      local raw = require('dngh-theme.palette.' .. mod)
       local palette = raw.palette
       palette = apply_ovr('all', palette)
       palette = apply_ovr(mod, palette)

@@ -1,5 +1,5 @@
-local collect = require('github-theme.lib.collect')
-local template = require('github-theme.util.template')
+local collect = require('dngh-theme.lib.collect')
+local template = require('dngh-theme.util.template')
 
 local M = {}
 
@@ -17,19 +17,19 @@ local function override(groups, spec, ovr)
 end
 
 function M.from(spec)
-  local ovr = require('github-theme.override').groups
-  local config = require('github-theme.config').options
+  local ovr = require('dngh-theme.override').groups
+  local config = require('dngh-theme.config').options
 
   if not spec then
     print('there is no spec')
   end
-  local editor = require('github-theme.group.editor').get(spec, config)
-  local syntax = require('github-theme.group.syntax').get(spec, config)
+  local editor = require('dngh-theme.group.editor').get(spec, config)
+  local syntax = require('dngh-theme.group.syntax').get(spec, config)
 
   local result = collect.deep_extend(editor, syntax)
 
   local default_enable_value = config.module_default
-  local mod_names = require('github-theme.config').module_names
+  local mod_names = require('dngh-theme.config').module_names
   for _, name in ipairs(mod_names) do
     local kind = type(config.modules[name])
     local opts = kind == 'boolean' and { enable = config.modules[name] }
@@ -40,7 +40,7 @@ function M.from(spec)
     if opts.enable then
       result = collect.deep_extend(
         result,
-        require('github-theme.group.modules.' .. name).get(spec, config, opts)
+        require('dngh-theme.group.modules.' .. name).get(spec, config, opts)
       )
     end
   end
@@ -56,7 +56,7 @@ function M.from(spec)
 end
 
 function M.load(name)
-  name = name or require('github-theme.config').theme
-  return M.from(require('github-theme.spec').load(name))
+  name = name or require('dngh-theme.config').theme
+  return M.from(require('dngh-theme.spec').load(name))
 end
 return M

@@ -1,4 +1,4 @@
-local config = require('github-theme.config')
+local config = require('dngh-theme.config')
 
 local function read_file(filepath)
   local file = io.open(filepath, 'r')
@@ -20,16 +20,16 @@ end
 local M = {}
 
 function M.reset()
-  require('github-theme.config').reset()
-  require('github-theme.override').reset()
+  require('dngh-theme.config').reset()
+  require('dngh-theme.override').reset()
 end
 
 ---Compiles all themes/styles with their current settings.
 ---@return nil
 function M.compile()
-  require('github-theme.lib.log').clear()
-  local compiler = require('github-theme.lib.compiler')
-  local themes = require('github-theme.palette').themes
+  require('dngh-theme.lib.log').clear()
+  local compiler = require('dngh-theme.lib.compiler')
+  local themes = require('dngh-theme.palette').themes
   local current_theme = config.theme
   for _, theme in ipairs(themes) do
     -- Compile current theme last (see discussion in #290)
@@ -67,7 +67,7 @@ function M.load(opts)
   ---@diagnostic disable-next-line: need-check-nil
   f()
 
-  require('github-theme.autocmds').set_autocmds()
+  require('dngh-theme.autocmds').set_autocmds()
   lock = false
 end
 
@@ -75,7 +75,7 @@ M.setup = function(opts)
   did_setup = true
   opts = opts or {}
 
-  local override = require('github-theme.override')
+  local override = require('dngh-theme.override')
 
   -- New configs
   if opts.options then
@@ -94,7 +94,7 @@ M.setup = function(opts)
     override.groups = opts.groups
   end
 
-  local util = require('github-theme.util')
+  local util = require('dngh-theme.util')
   util.ensure_dir(config.options.compile_path)
 
   local cached_path = util.join_paths(config.options.compile_path, 'cache')
@@ -103,14 +103,14 @@ M.setup = function(opts)
   local git_path =
     vim.fn.fnamemodify(vim.fn.resolve(debug.getinfo(1).source:sub(2)), ':p:h:h:h')
   local git = vim.fn.getftime(util.join_paths(git_path, '.git'))
-  local hash = require('github-theme.lib.hash')(opts) .. (git == -1 and git_path or git)
+  local hash = require('dngh-theme.lib.hash')(opts) .. (git == -1 and git_path or git)
 
   if cached ~= hash then
     M.compile()
     write_file(cached_path, hash)
   end
 
-  require('github-theme.util.deprecation').check_deprecation(opts)
+  require('dngh-theme.util.deprecation').check_deprecation(opts)
 end
 
 return M

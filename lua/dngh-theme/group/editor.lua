@@ -1,4 +1,4 @@
-local C = require('github-theme.lib.color')
+local C = require('dngh-theme.lib.color')
 
 local M = {}
 
