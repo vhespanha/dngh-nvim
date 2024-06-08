@@ -52,8 +52,8 @@ local palette = {
   neutral = {
     emphasis_plus = scale.gray[5],
     emphasis = scale.gray[5],
-    muted = alpha(C.from_rgba(110, 118, 129, 1), 0.4),
-    subtle = alpha(C.from_rgba(110, 118, 129, 1), 0.1),
+    muted = scale.gray[7],
+    subtle = scale.gray[7],
   },
 
   accent = {
