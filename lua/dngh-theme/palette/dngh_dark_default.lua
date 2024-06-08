@@ -45,7 +45,7 @@ local palette = {
 
   border = {
     default = scale.gray[9],
-    muted = scale.gray[8],
+    muted = scale.gray[7],
     subtle = alpha(C.from_rgba(240, 246, 252, 1), 0.1),
   },
 
@@ -126,7 +126,7 @@ local function generate_spec(pal)
     bg0  = pal.canvas.inset,                    -- Dark bg (popup and float)
     bg1  = pal.canvas.default,                  -- Default bg
     bg2  = alpha(C(pal.neutral.emphasis), 0.1), -- Lighter bg (colorcolumn Folds)
-    bg3  = alpha(C(pal.scale.gray[6]), 0.15),   -- Lighter bg (cursor line)
+    bg3  = alpha(C(pal.scale.gray[7]), 0.15),   -- Lighter bg (cursor line)
     bg4  = pal.scale.gray[4],                   -- Conceal
 
     fg0  = pal.fg.subtle,                       -- Lighter fg
