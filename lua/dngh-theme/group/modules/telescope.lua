@@ -9,7 +9,7 @@ function M.get(spec, config, opts)
     TelescopeSelection      = { link = 'CursorLine' },
     TelescopeMatching       = { link = 'Search' },
     TelescopeBorder         = { fg = spec.palette.neutral.subtle },
-    TelescopeNormal         = { fg = spec.palette.fg.muted },
+    TelescopeNormal         = { fg = spec.palette.fg.subtle },
 
   }
 end
