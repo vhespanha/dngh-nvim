@@ -123,45 +123,45 @@ local palette = {
 local function generate_spec(pal)
   -- stylua: ignore start
   local spec = {
-    bg0  = alpha(C(pal.canvas.inset), 0.75),            -- Dark bg (popup and float)
-    bg1  = pal.canvas.default,                          -- Default bg
-    bg2  = alpha(C(pal.neutral.emphasis), 0.1),         -- Lighter bg (colorcolumn Folds)
-    bg3  = alpha(C(pal.scale.gray[9]), 0.75),            -- Lighter bg (cursor line)
-    bg4  = pal.scale.gray[4],                           -- Conceal
+    bg0  = alpha(C(pal.canvas.inset), 0.75),    -- Dark bg (popup and float)
+    bg1  = pal.canvas.default,                  -- Default bg
+    bg2  = alpha(C(pal.neutral.emphasis), 0.1), -- Lighter bg (colorcolumn Folds)
+    bg3  = alpha(C(pal.scale.gray[3]), 0.75),   -- Lighter bg (cursor line)
+    bg4  = pal.scale.gray[4],                   -- Conceal
 
-    fg0  = pal.fg.subtle,                               -- Lighter fg
-    fg1  = pal.fg.default,                              -- Default fg
-    fg2  = pal.fg.muted,                                -- Darker fg (status line)
-    fg3  = pal.scale.gray[5],                           -- Darker fg (line numbers, fold columns)
+    fg0  = pal.fg.subtle,                       -- Lighter fg
+    fg1  = pal.fg.default,                      -- Default fg
+    fg2  = pal.fg.muted,                        -- Darker fg (status line)
+    fg3  = pal.scale.gray[5],                   -- Darker fg (line numbers, fold columns)
 
-    sel0 = alpha(C(pal.accent.fg), 0.30),               -- Visual selection bg
-    sel1 = alpha(C(pal.accent.muted), 0.90),            -- Popup sel bg
-    sel2 = alpha(C(pal.scale.yellow[1]), 0.20),         -- Search bg
+    sel0 = alpha(C(pal.accent.fg), 0.30),       -- Visual selection bg
+    sel1 = alpha(C(pal.accent.muted), 0.90),    -- Popup sel bg
+    sel2 = alpha(C(pal.scale.yellow[1]), 0.20), -- Search bg
   }
 
   spec.syntax = {
-    bracket     = spec.fg1,                             -- Brackets and Punctuation
-    builtin0    = pl.syntax.constant,                   -- Builtin variable
-    builtin1    = pl.syntax.keyword,                    -- Builtin type
-    builtin2    = pl.syntax.constant,                   -- Builtin const
-    comment     = pl.syntax.comment,                    -- Comment
-    conditional = pl.syntax.keyword,                    -- Conditional and loop
-    const       = pl.syntax.constant,                   -- Constants, imports and booleans
-    dep         = pal.scale.red[3],                     -- Deprecated
-    field       = pl.syntax.constant,                   -- Field
-    func        = pl.syntax.entity,                     -- Functions and Titles
-    ident       = spec.fg1,                             -- Identifiers
-    keyword     = pl.syntax.keyword,                    -- Keywords
-    number      = pl.syntax.constant,                   -- Numbers
-    operator    = pl.syntax.constant,                   -- Operators
-    param       = spec.fg1,                             -- Parameters
-    preproc     = pl.syntax.keyword,                    -- PreProc
-    regex       = pl.syntax.string,                     -- Regex
-    statement   = pl.syntax.keyword,                    -- Statements
-    string      = pl.syntax.string,                     -- Strings
-    type        = pl.syntax.variable,                   -- Types
-    tag         = pl.syntax.entityTag,                  -- Tags
-    variable    = spec.fg1,                             -- Variables
+    bracket     = spec.fg1,            -- Brackets and Punctuation
+    builtin0    = pl.syntax.constant,  -- Builtin variable
+    builtin1    = pl.syntax.keyword,   -- Builtin type
+    builtin2    = pl.syntax.constant,  -- Builtin const
+    comment     = pl.syntax.comment,   -- Comment
+    conditional = pl.syntax.keyword,   -- Conditional and loop
+    const       = pl.syntax.constant,  -- Constants, imports and booleans
+    dep         = pal.scale.red[3],    -- Deprecated
+    field       = pl.syntax.constant,  -- Field
+    func        = pl.syntax.entity,    -- Functions and Titles
+    ident       = spec.fg1,            -- Identifiers
+    keyword     = pl.syntax.keyword,   -- Keywords
+    number      = pl.syntax.constant,  -- Numbers
+    operator    = pl.syntax.constant,  -- Operators
+    param       = spec.fg1,            -- Parameters
+    preproc     = pl.syntax.keyword,   -- PreProc
+    regex       = pl.syntax.string,    -- Regex
+    statement   = pl.syntax.keyword,   -- Statements
+    string      = pl.syntax.string,    -- Strings
+    type        = pl.syntax.variable,  -- Types
+    tag         = pl.syntax.entityTag, -- Tags
+    variable    = spec.fg1,            -- Variables
   }
 
   spec.diag = {
