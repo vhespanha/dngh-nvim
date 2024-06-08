@@ -404,7 +404,7 @@ local M = vim.json.decode(
   "fg": {
     "default": "#e6edf3",
     "muted": "#7d8590",
-    "subtle": "#6e7681",
+    "subtle": "#6a737d",
     "onEmphasis": "#ffffff"
   },
   "canvas": {
