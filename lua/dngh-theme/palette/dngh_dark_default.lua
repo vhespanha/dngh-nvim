@@ -53,14 +53,14 @@ local palette = {
     emphasis_plus = scale.gray[5],
     emphasis = scale.gray[5],
     muted = scale.gray[7],
-    subtle = scale.gray[7],
+    subtle = '#6a737d',
   },
 
   accent = {
-    fg = '#2f81f7',
-    emphasis = scale.blue[6],
-    muted = alpha(C.from_rgba(56, 139, 253, 1), 0.4),
-    subtle = alpha(C.from_rgba(56, 139, 253, 1), 0.15),
+    fg = scale.purple[5],
+    emphasis = scale.purple[6],
+    muted = alpha(C.from_rgba(163, 113, 247, 1), 0.4),
+    subtle = alpha(C.from_rgba(163, 113, 247, 1), 0.1),
   },
 
   success = {
