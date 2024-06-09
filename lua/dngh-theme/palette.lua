@@ -43,7 +43,6 @@ function M.load(name)
       palette.generate_spec = raw.generate_spec
       result[mod] = palette
     end
-
     return result
   end
 end
