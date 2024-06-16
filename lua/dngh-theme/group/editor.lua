@@ -22,7 +22,7 @@ function M.get(spec, config)
 
   -- stylua: ignore start
   local groups = {
-    ColorColumn  = { bg = spec.bg2 },                          -- used for the columns set with 'colorcolumn'
+    ColorColumn  = { link = 'CursorLine' },                    -- used for the columns set with 'colorcolumn'
     Conceal      = { fg = spec.bg4 },                          -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor       = { fg = spec.bg1, bg = spec.fg2 },           -- character under the cursor
     lCursor      = { link = 'Cursor' },                        -- the character under the cursor when |language-mapping| is used (see 'guicursor')
@@ -105,7 +105,7 @@ function M.get(spec, config)
 
   if config.hide_nc_statusline then
     groups.StatusLineNC =
-    { fg = spec.bg1, bg = spec.bg1, sp = spec.bg0, style = 'Underline' }
+      { fg = spec.bg1, bg = spec.bg1, sp = spec.bg0, style = 'Underline' }
   end
   return groups
 end
