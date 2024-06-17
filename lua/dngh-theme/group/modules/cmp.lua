@@ -9,8 +9,7 @@ function M.get(spec, config, opts)
   -- stylua: ignore
   return {
     CmpDocumentation         = { fg = spec.fg1, bg = spec.bg0 },
-    CmpDocumentationBorder   = { fg = spec.sel0, bg = spec.bg0 },
-
+    CmpDocumentationBorder   = { fg = spec.palette.border.muted, bg = spec.bg0 },
     CmpItemAbbr              = { fg = spec.fg1, },
     CmpItemAbbrDeprecated    = { fg = syn.dep, style = 'strikethrough' },
     CmpItemAbbrMatch         = { fg = syn.func, },
@@ -25,7 +24,6 @@ function M.get(spec, config, opts)
     CmpItemKindConstant      = { link = has_ts and '@constant' or 'Constant' },
     CmpItemKindReference     = { link = 'Keyword' },
     CmpItemKindValue         = { link = 'Keyword' },
-
     CmpItemKindFunction      = { link = 'Function' },
     CmpItemKindMethod        = { link = 'Function' },
     CmpItemKindConstructor   = { link = 'Function' },
