@@ -3,29 +3,29 @@ local M = {}
 function M.get(spec)
   local p = spec.palette
   return {
-    terminal_color_0 = p.black.base,
-    terminal_color_8 = p.black.bright,
+    terminal_color_0 = '#282a2e',
+    terminal_color_8 = '#4B4B4B',
 
-    terminal_color_1 = p.red.base,
-    terminal_color_9 = p.red.bright,
+    terminal_color_1 = '#ff7b72',
+    terminal_color_9 = '#ff7b72',
 
-    terminal_color_2 = p.green.base,
-    terminal_color_10 = p.green.bright,
+    terminal_color_2 = '#56d364',
+    terminal_color_10 = '#56d364',
 
-    terminal_color_3 = p.yellow.base,
-    terminal_color_11 = p.yellow.bright,
+    terminal_color_3 = '#e3b341',
+    terminal_color_11 = '#e3b341',
 
-    terminal_color_4 = p.blue.base,
-    terminal_color_12 = p.blue.bright,
+    terminal_color_4 = '#79c0ff',
+    terminal_color_12 = '#79c0ff',
 
-    terminal_color_5 = p.magenta.base,
-    terminal_color_13 = p.magenta.bright,
+    terminal_color_5 = '#bc8cff',
+    terminal_color_13 = '#bc8cff',
 
-    terminal_color_6 = p.cyan.base,
-    terminal_color_14 = p.cyan.bright,
+    terminal_color_6 = '#56d4dd',
+    terminal_color_14 = '#56d4dd',
 
-    terminal_color_7 = p.white.base,
-    terminal_color_15 = p.white.bright,
+    terminal_color_7 = '#b1bac4',
+    terminal_color_15 = '#FFFFFF',
   }
 end
 
