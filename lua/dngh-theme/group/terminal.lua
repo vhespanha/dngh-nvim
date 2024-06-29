@@ -1,7 +1,6 @@
 local M = {}
 
-function M.get(spec)
-  local p = spec.palette
+function M.get()
   return {
     terminal_color_0 = '#282a2e',
     terminal_color_8 = '#4B4B4B',

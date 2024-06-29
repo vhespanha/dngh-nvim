@@ -44,9 +44,9 @@ local palette = {
   canvas = primitives.canvas,
 
   border = {
-    default = scale.gray[9],
+    default = scale.gray[7],
     muted = scale.gray[7],
-    subtle = alpha(C.from_rgba(240, 246, 252, 1), 0.1),
+    subtle = alpha(C(scale.gray[7])),
   },
 
   neutral = {
