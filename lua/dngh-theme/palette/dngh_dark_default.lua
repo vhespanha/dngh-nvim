@@ -46,11 +46,7 @@ local palette = {
   border = {
     default = scale.gray[7],
     muted = scale.gray[7],
-<<<<<<< HEAD
-    subtle = alpha(C(scale.gray[7])),
-=======
-    subtle = alpha(C(pal.scale.gray[7]), 0.40),
->>>>>>> fdb8301 (oops)
+    subtle = scale.gray[7],
   },
 
   neutral = {
