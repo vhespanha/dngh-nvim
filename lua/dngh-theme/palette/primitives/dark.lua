@@ -95,7 +95,7 @@ local M = {
     },
   },
   checks = {
-    bg = '#0b0b0b',
+    bg = '#0f0f0f',
     runBorderWidth = '1px',
     containerBorderWidth = '1px',
     textPrimary = '#e6edf3',
@@ -409,7 +409,7 @@ local M = {
   canvas = {
     default = '#0f0f0f',
     overlay = '#272727',
-    inset = '#0b0b0b',
+    inset = '#0f0f0f',
     subtle = '#272727',
   },
   border = {
