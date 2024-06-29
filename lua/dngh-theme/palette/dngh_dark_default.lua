@@ -46,7 +46,7 @@ local palette = {
   border = {
     default = scale.gray[7],
     muted = scale.gray[7],
-    subtle = scale.gray[7],
+    subtle = alpha(C(scale.gray[7]), 0.4),
   },
 
   neutral = {
