@@ -36,8 +36,8 @@ local palette = {
 
   fg = {
     default = '#e6edf3',
-    muted = '#7d8590',
-    subtle = scale.gray[5],
+    muted = '#6a737d',
+    subtle = '#6a737d',
     on_emphasis = scale.white,
   },
 
@@ -132,7 +132,7 @@ local function generate_spec(pal)
     fg0  = pal.fg.subtle,                       -- Lighter fg
     fg1  = pal.fg.default,                      -- Default fg
     fg2  = pal.fg.muted,                        -- Darker fg (status line)
-    fg3  = pal.scale.gray[5],                   -- Darker fg (line numbers, fold columns)
+    fg3  = pal.fg.subtle,                       -- Darker fg (line numbers, fold columns)
 
     sel0 = alpha(C(pal.accent.fg), 0.30),       -- Visual selection bg
     sel1 = alpha(C(pal.accent.muted), 0.90),    -- Popup sel bg
@@ -144,7 +144,7 @@ local function generate_spec(pal)
     builtin0    = pl.syntax.constant,  -- Builtin variable
     builtin1    = pl.syntax.keyword,   -- Builtin type
     builtin2    = pl.syntax.constant,  -- Builtin const
-    comment     = pl.syntax.comment,   -- Comment
+    comment     = pl.syntax.comment,   -- Commentcomment
     conditional = pl.syntax.keyword,   -- Conditional and loop
     const       = pl.syntax.constant,  -- Constants, imports and booleans
     dep         = pal.scale.red[3],    -- Deprecated

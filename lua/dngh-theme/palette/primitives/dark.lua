@@ -175,7 +175,7 @@ local M = {
     headerBg = '#0f0f0f',
     sidebarBg = '#272727',
     gradientIn = '#272727',
-    gradientOut = 'rgba(22,27,34,0)',
+    gradientOut = 'rgba(15,15,15,0)',
   },
   mktg = {
     btn = {
