@@ -24,7 +24,7 @@ function M.get()
     terminal_color_14 = '#56d4dd',
 
     terminal_color_7 = '#b1bac4',
-    terminal_color_15 = '#FFFFFF',
+    terminal_color_15 = '#e6edf3',
   }
 end
 
