@@ -5,7 +5,7 @@ local M = {}
 function M.get(spec, config, opts)
   -- stylua: ignore
   return {
-    TelescopeSelectionCaret = { fg = spec.palette.border.muted },
+    TelescopeSelectionCaret = { fg = spec.palette.fg.default },
     TelescopeSelection      = { link = 'CursorLine' },
     TelescopeMatching       = { link = 'Search' },
     TelescopeBorder         = { fg = spec.palette.border.muted },
