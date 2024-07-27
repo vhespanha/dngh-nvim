@@ -17,7 +17,6 @@ function M.get(spec, config, opts)
 
     CmpItemKindDefault       = { fg = spec.fg2, },
     CmpItemMenu              = { link = 'Comment' },
-
     CmpItemKindKeyword       = { link = 'Identifier' },
 
     CmpItemKindVariable      = { link = has_ts and '@variable' or  'Identifier' },
@@ -43,7 +42,7 @@ function M.get(spec, config, opts)
     CmpItemKindTypeParameter = { link = has_ts and '@variable.member' or 'Identifier' },
     CmpItemKindEnumMember    = { link = has_ts and '@variable.member' or 'Identifier' },
     CmpItemKindOperator      = { link = 'Operator' },
-    CmpItemKindSnippet       = { fg = spec.fg2 },
+    CmpItemKindSnippet       = { fg = spec.fg1 },
   }
 end
 
