@@ -66,7 +66,7 @@ function M.get(spec, config)
     Pmenu        = { fg = spec.fg1, bg = spec.bg0 },                                                              -- Popup menu: normal item.
     PmenuSel     = { bg = spec.sel1 },                                                                            -- Popup menu: selected item.
     PmenuSbar    = { link = 'Pmenu' },                                                                            -- Popup menu: scrollbar.
-    PmenuThumb   = { bg = spec.sel0 },                                                                            -- Popup menu: Thumb of the scrollbar.
+    PmenuThumb   = { bg = spec.bg4},                                                                            -- Popup menu: Thumb of the scrollbar.
     Question     = { link = 'MoreMsg' },                                                                          -- |hit-enter| prompt and yes/no questions
     QuickFixLine = { link = 'CursorLine' },                                                                       -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
 
