@@ -101,7 +101,9 @@ function M.get(spec, config)
     lessClassCall      = { link = 'Function' },
     lessCssAttribute   = { link = 'Constant' },
     lessFunction       = { link = 'Constant' },
-    lessVariable       = { fg = spec.fg1 },
+    lessVariable       = { link = 'Variable' },
+
+    ["@module.go"]     = { fg = syn.import, style = stl.imports },
 
     -- mkdHeading            = {},
     -- mkdCode               = {},
@@ -141,9 +143,9 @@ function M.get(spec, config)
     yamlBlockMappingKey                         = { fg = syn.tag },
     yamlFlowMappingKey                          = { fg = syn.tag },
 
-    RainbowDelimiterOrange = { fg = '#ffab70' },
-    RainbowDelimiterBlue = { fg = '#79b8ff' },
-    RainbowDelimiterViolet = { fg = '#b392f0' },
+    RainbowDelimiterOrange                      = { fg = '#ffab70' },
+    RainbowDelimiterBlue                        = { fg = '#79b8ff' },
+    RainbowDelimiterViolet                      = { fg = '#b392f0' },
   }
 end
 

@@ -42,6 +42,7 @@ local M = {
       comment = '#6a737d',
       constant = '#79b8ff',
       entity = '#b392f0',
+      type = '#b392f0',
       storageModifierImport = '#e1e4e8',
       entityTag = '#85e89d',
       keyword = '#f97583',

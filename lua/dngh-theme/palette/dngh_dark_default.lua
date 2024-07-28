@@ -159,9 +159,9 @@ local function generate_spec(pal)
     regex       = pl.syntax.string,    -- Regex
     statement   = pl.syntax.keyword,   -- Statements
     string      = pl.syntax.string,    -- Strings
-    type        = pl.syntax.variable,  -- Types
+    type        = pl.syntax.type,      -- Types
     tag         = pl.syntax.entityTag, -- Tags
-    variable    = spec.fg1,            -- Variables
+    variable    = pl.syntax.variable,            -- Variables
   }
 
   spec.diag = {
