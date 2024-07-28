@@ -11,12 +11,16 @@ function M.get(spec, config, opts)
     CmpDocumentation         = { fg = spec.fg1, bg = spec.bg0 },
     CmpDocumentationBorder   = { fg = spec.palette.border.muted, bg = spec.bg0 },
     CmpItemAbbr              = { fg = spec.fg1, },
+    CmpItemAbbrDefault              = { fg = spec.fg1, },
     CmpItemAbbrDeprecated    = { fg = syn.dep, style = 'strikethrough' },
     CmpItemAbbrMatch         = { fg = syn.func, },
+    CmpItemAbbrMatchDefault         = { fg = syn.func, },
     CmpItemAbbrMatchFuzzy    = { fg = syn.func, },
+    CmpItemAbbrMatchFuzzyDefault    = { fg = syn.func, },
 
     CmpItemKindDefault       = { fg = spec.fg1, },
     CmpItemMenu              = { link = 'Comment' },
+    CmpItemMenuDefault       = { link = 'CmpDocumentation' },
     CmpItemKindKeyword       = { link = 'Identifier' },
 
     CmpItemKindVariable      = { link = has_ts and '@variable' or  'Identifier' },
