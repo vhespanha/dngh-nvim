@@ -15,7 +15,7 @@ function M.get(spec, config, opts)
     CmpItemAbbrMatch         = { fg = syn.func, },
     CmpItemAbbrMatchFuzzy    = { fg = syn.func, },
 
-    CmpItemKindDefault       = { fg = spec.fg2, },
+    CmpItemKindDefault       = { fg = spec.fg1, },
     CmpItemMenu              = { link = 'Comment' },
     CmpItemKindKeyword       = { link = 'Identifier' },
 
