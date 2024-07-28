@@ -55,7 +55,7 @@ function M.get(spec, config)
     -- MsgArea         = { fg = spec.fg2 }, -- Area for messages and cmdline
     -- MsgSeparator    = {}, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg      = { fg = spec.diag.info, style = 'bold' },                                                       -- |more-prompt|
-    NonText      = { fg = spec.bg4 },                                                                             -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., '>' displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+    NonText      = { fg = spec.fg2 },                                                                             -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., '>' displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal       = { fg = spec.fg1, bg = trans and 'NONE' or spec.bg1 },                                          -- normal text
     NormalSB     = { fg = spec.fg1, bg = sb_bg },                                                                 -- normal text
 
