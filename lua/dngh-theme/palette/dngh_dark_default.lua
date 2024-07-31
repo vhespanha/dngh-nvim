@@ -161,7 +161,7 @@ local function generate_spec(pal)
     string      = pl.syntax.string,    -- Strings
     type        = pl.syntax.type,      -- Types
     tag         = pl.syntax.entityTag, -- Tags
-    variable    = pl.syntax.variable,            -- Variables
+    variable    = spec.fg1,  -- Variables
   }
 
   spec.diag = {
