@@ -195,12 +195,13 @@ local function generate_spec(pal)
   }
 
   spec.md = {
-    h1 =  pal.magenta.base,
-    h2 =  pal.pink.base,
-    h3 =  pal.red.base,
-    h4 =  pal.orange,
-    h5 =  pal.yellow.base,
-    h6 =  pal.green.base,
+    h1 = pl.syntax.entity,
+    h2 = pl.syntax.constant,
+    h3 = pl.syntax.keyword,
+    h4 = pl.syntax.entityTag,
+    h5 = pl.syntax.string,
+    h6 = pl.syntax.variable,
+    dash = pal.canvas.subtle
   }
 
   -- stylua: ignore end

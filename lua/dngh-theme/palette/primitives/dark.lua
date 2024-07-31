@@ -411,7 +411,7 @@ local M = {
     default = '#0f0f0f',
     overlay = '#272727',
     inset = '#0f0f0f',
-    subtle = '#272727',
+    subtle = '#131313',
   },
   border = {
     default = '#272727',
