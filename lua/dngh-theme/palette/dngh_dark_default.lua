@@ -33,6 +33,7 @@ local palette = {
   white = { base = scale.gray[3], bright = scale.gray[3] },
   yellow = { base = scale.yellow[4], bright = scale.yellow[3] },
   cyan = { base = '#76e3ea', bright = '#b3f0ff' },
+  coral = { base = scale.coral[4], bright = scale.coral[3] },
 
   fg = {
     default = '#e6edf3',
@@ -191,6 +192,15 @@ local function generate_spec(pal)
     changed  = pal.attention.fg,
     conflict = pal.severe.fg,
     ignored  = pal.fg.subtle,
+  }
+
+  spec.md = {
+    h1 =  pal.magenta.base,
+    h2 =  pal.pink.base,
+    h3 =  pal.red.base,
+    h4 =  pal.orange.base,
+    h5 =  pal.yellow.base,
+    h6 =  pal.green.base,
   }
 
   -- stylua: ignore end
