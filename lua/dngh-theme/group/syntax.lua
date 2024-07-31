@@ -156,6 +156,7 @@ function M.get(spec, config)
     RenderMarkdownH6Bg = { link = 'markdownH6' },
     RenderMarkdownBullet = { link = 'markdownH1' },
     RenderMarkdownQuote = { link = 'Comment' },
+    RenderMarkdownDash = { link = 'Comment' },
   }
 end
 

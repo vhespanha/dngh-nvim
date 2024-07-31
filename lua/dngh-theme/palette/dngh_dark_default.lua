@@ -198,7 +198,7 @@ local function generate_spec(pal)
     h1 =  pal.magenta.base,
     h2 =  pal.pink.base,
     h3 =  pal.red.base,
-    h4 =  pal.orange.base,
+    h4 =  pal.orange,
     h5 =  pal.yellow.base,
     h6 =  pal.green.base,
   }
