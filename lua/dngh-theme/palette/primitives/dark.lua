@@ -70,6 +70,9 @@ local M = {
       brackethighlighterAngle = '#6a737d',
       sublimelinterGutterMark = '#272727',
       constantOtherReferenceLink = '#a5d6ff',
+      rainbowDelimiterRed = '#b62324',
+      rainbowDelimiterBlue = '#58a6ff',
+      rainbowDelimiterViolet = '#a371f7',
     },
   },
   codemirror = {

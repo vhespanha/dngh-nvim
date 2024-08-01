@@ -204,6 +204,12 @@ local function generate_spec(pal)
     dash = pal.canvas.subtle
   }
 
+  spec.rd = {
+  violet = alpha(C(pl.syntax.rainbowDelimiterViolet), 0.60),
+  red = alpha(C(pl.syntax.rainbowDelimiterRed), 0.60),
+  blue = alpha(C(pl.syntax.rainbowDelimiterBlue), 0.60),
+  }
+
   -- stylua: ignore end
   return spec
 end
