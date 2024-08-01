@@ -157,7 +157,7 @@ function M.get(spec, config)
     RenderMarkdownBullet = { link = 'markdownH1' },
     RenderMarkdownQuote = { link = 'Comment' },
     RenderMarkdownDash = { fg = spec.md.dash },
-    RenderMarkdownCode = { bg = '1b1b1b' },
+    RenderMarkdownCode = { bg = '#1b1b1b' },
   }
 end
 
