@@ -138,9 +138,9 @@ function M.get(spec, config)
     yamlBlockMappingKey = { fg = syn.tag },
     yamlFlowMappingKey = { fg = syn.tag },
 
-    RainbowDelimiterRed = { fg = '#f97583' },
-    RainbowDelimiterBlue = { fg = '#79b8ff' },
-    RainbowDelimiterViolet = { fg = '#b392f0' },
+    RainbowDelimiterRed = { fg = '#f85149' },
+    RainbowDelimiterBlue = { fg = '#58a6ff' },
+    RainbowDelimiterViolet = { fg = '#a371f7' },
 
     RenderMarkdownH1 = { link = 'markdownH1' },
     RenderMarkdownH2 = { link = 'markdownH2' },
