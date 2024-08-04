@@ -205,9 +205,9 @@ local function generate_spec(pal)
   }
 
   spec.rd = {
-  violet = alpha(C(pl.syntax.rainbowDelimiterViolet), 0.60),
-  red = alpha(C(pl.syntax.rainbowDelimiterRed), 0.60),
-  blue = alpha(C(pl.syntax.rainbowDelimiterBlue), 0.60),
+  transparentViolet = alpha(C(pl.syntax.rainbowDelimiterViolet), 0.60),
+  transparentPink = alpha(C(pl.syntax.rainbowDelimiterPink), 0.60),
+  transparentBlue = alpha(C(pl.syntax.rainbowDelimiterBlue), 0.60),
   }
 
   -- stylua: ignore end
