@@ -181,7 +181,7 @@ If you want to stay on nvim 0.7, disable the module, or track on 'v0.0.x' branch
 
     ['@tag']                      = { fg = syn.tag },                                 -- Tags like html tag names
     ['@tag.attribute']            = { link = '@variable.member' },                    -- Tag attributes (e.g. HTML element attributes)
-    ['@tag.delimiter']            = FALLBACK_OR_NONE,                                 -- Tag delimiter like `<`, `>`, `/`, etc.
+    ['@tag.delimiter']            = { link = 'NONE'},                                 -- Tag delimiter like `<`, `>`, `/`, etc.
 
     -- Non-highlighting captures -----------------------------------------------
 
