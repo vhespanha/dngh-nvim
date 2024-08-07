@@ -55,7 +55,7 @@ If you want to stay on nvim 0.7, disable the module, or track on 'v0.0.x' branch
     ['@variable.member']          = { fg = syn.field },                               -- For fields
     ['@variable.parameter']       = { fg = syn.param, stl.variables },                -- For parameters of a function
 
-    ['@constant']              = { link = 'Constant' },                               -- Constant identifiers
+    -- ['@constant']              = { link = 'Constant' },                               -- Constant identifiers
     ['@constant.builtin']         = { fg = syn.builtin2, style = stl.keywords },      -- For constant that are built in the language: nil in Lua
     ['@constant.macro']           = { link = 'Macro' },                               -- For constants that are defined by macros: NULL in C
 
@@ -89,7 +89,7 @@ If you want to stay on nvim 0.7, disable the module, or track on 'v0.0.x' branch
     ['@type']                     = { fg = syn.type },                                -- For custom/user/non-builtin types
     ['@type.builtin']             = { fg = syn.builtin1, style = stl.types },         -- For builtin types
 
-    ['@type.definition']       = { link = '@type' },                                  -- type definitions (e.g. `typedef` in C)
+    -- ['@type.definition']       = { link = '@type' },                                  -- type definitions (e.g. `typedef` in C)
     ['@type.qualifier']           = { fg = syn.keyword },                             -- type qualifiers (e.g. `const`, css's `!important`)
 
     ['@attribute']                = { link = 'Constant' },                            -- Attribute annotations (e.g. Python decorators)
@@ -98,28 +98,28 @@ If you want to stay on nvim 0.7, disable the module, or track on 'v0.0.x' branch
 
     -- Functions ----------------------------------------------------------------
 
-    ['@function']              = { link = 'Function' },                               -- For function (calls and definitions)
+    -- ['@function']              = { link = 'Function' },                               -- For function (calls and definitions)
     ['@function.builtin']         = FALLBACK_OR_NONE,                                 -- For builtin functions: table.insert in Lua
-    ['@function.call']         = { link = '@function' },                              -- Function calls
-    ['@function.macro']        = { fg = syn.builtin0, style = stl.functions },        -- Macro functions (calls & defs): macro_rules!, println!()
+    -- ['@function.call']         = { link = '@function' },                              -- Function calls
+    -- ['@function.macro']        = { fg = syn.builtin0, style = stl.functions },        -- Macro functions (calls & defs): macro_rules!, println!()
 
-    ['@function.method']          = { link = '@function'},                            -- For method definitions/declarations
-    ['@function.method.call']     = { link = '@method' },                             -- Method calls
+    -- ['@function.method']          = { link = '@function'},                            -- For method definitions/declarations
+    -- ['@function.method.call']     = { link = '@method' },                             -- Method calls
 
     ['@constructor']              = { fg = pl.syntax.variable},                       -- Constructor calls & defs: {} in Lua, new Type() (js/php), constructor() {}
-    ['@operator']              = { link = 'Operator' },                               -- For any operator: +, but also -> and * in C
+    -- ['@operator']              = { link = 'Operator' },                               -- For any operator: +, but also -> and * in C
 
 
     -- Keywords -----------------------------------------------------------------
 
     -- ['@keyword']                      = { link = 'Keyword' },                             -- For keywords that don't fall in previous categories
-    ['@keyword.coroutine']            = { link = 'Keyword' },                             -- Keywords related to coroutines (e.g. `go` in Go, `async/await` in Python)
+    -- ['@keyword.coroutine']            = { link = 'Keyword' },                             -- Keywords related to coroutines (e.g. `go` in Go, `async/await` in Python)
     ['@keyword.function']             = { fg = syn.keyword, style = stl.functions },      -- Keywords used to def a fn: `function` in Lua, `def` & `lambda` in Python
     ['@keyword.operator']             = { fg = syn.keyword, style = stl.operators },      -- For `new` keyword operator, `sizeof`, etc.
-    ['@keyword.import']               = { link = 'Include' },                             -- For includes: #include in C, use or extern crate in Rust, Lua require
+    -- ['@keyword.import']               = { link = 'Include' },                             -- For includes: #include in C, use or extern crate in Rust, Lua require
     -- ['@keyword.storage']              = { link = 'StorageClass' },                        -- Visibility/life-time/etc. modifiers (e.g. `static`)
     -- ['@keyword.repeat']               = { link = 'Repeat' },                              -- For keywords related to loops.
-    ['@keyword.return']               = { fg = syn.keyword, style = stl.keywords },
+    -- ['@keyword.return']               = { fg = syn.keyword, style = stl.keywords },
     -- ['@keyword.debug']                = { link = spec.fg1 },                              -- For keywords related to conditionals.
     ['@keyword.exception']            = { fg = syn.builtin0, style = stl.keywords },      -- Exception related keywords: `try`, `except`, `finally` in Python
 
@@ -132,9 +132,9 @@ If you want to stay on nvim 0.7, disable the module, or track on 'v0.0.x' branch
 
     -- Punctuation --------------------------------------------------------------
 
-    ['@punctuation.delimiter']        = { fg = syn.bracket },                             -- For delimiters (e.g. `.`)
+    -- ['@punctuation.delimiter']        = { fg = syn.bracket },                             -- For delimiters (e.g. `.`)
     ['@punctuation.bracket']          = { fg = syn.bracket },                             -- For brackets and parenthesis
-    ['@punctuation.special']          = { link = 'Special' },                             -- Special symbols (e.g. `{}` in string interpolation)
+    -- ['@punctuation.special']          = { link = 'Special' },                             -- Special symbols (e.g. `{}` in string interpolation)
 
 
     -- Comment ------------------------------------------------------------------
@@ -153,20 +153,20 @@ If you want to stay on nvim 0.7, disable the module, or track on 'v0.0.x' branch
     ['@markup.strong']            = { fg = spec.fg1, style = 'bold' },                -- Bold text
     ['@markup.italic']            = { fg = spec.fg1, style = 'italic' },              -- Text with emphasis
     ['@markup.strikethrough']     = { fg = spec.fg1, style = 'strikethrough' },       -- Strikethrough text
-    ['@markup.underline']         = { link = 'Underlined' },                          -- Underlined text (only for literal underline markup!)
+    -- ['@markup.underline']         = { link = 'Underlined' },                          -- Underlined text (only for literal underline markup!)
 
-    ['@markup.heading']           = { link = 'Title'},                                -- Titles like: # Example
-    ['@markup.quote']             = { fg = syn.tag },                                 -- block quotes
-    ['@markup.math']              = { fg = syn.tag },                                 -- math environments (e.g. `$ ... $` in LaTeX)
+    -- ['@markup.heading']           = { link = 'Title'},                                -- Titles like: # Example
+    -- ['@markup.quote']             = { fg = syn.tag },                                 -- block quotes
+    -- ['@markup.math']              = { fg = syn.tag },                                 -- math environments (e.g. `$ ... $` in LaTeX)
     ['@markup.environment']       = { fg = syn.preproc },                             -- Text environments of markup languages
     ['@markup.environment.name']  = { fg = syn.func },                                -- Text indicating the type of an environment
 
-    ['@markup.link']              = { fg = spec.sel0, style = 'underline' },           -- References
-    ['@markup.link.uri']          = { fg = spec.sel0, style = 'italic,underline' },   -- Urls, links and emails
+    ['@markup.link']              = { fg = spec.fg1, style = 'underline' },           -- References
+    ['@markup.link.uri']          = { fg = syn.const, style = 'italic,underline' },   -- Urls, links and emails
     ['@markup.link.label']        = { link = 'Special' },                             -- Other special strings (e.g. dates)
 
     ['@markup.raw']               = { fg = syn.ident, style = 'italic' },             -- literal or verbatim text (e.g., inline code)
-    ['@markup.raw.block']         = { link = '@markup.raw' },                         -- literal or verbatim text as a stand-alone block
+    -- ['@markup.raw.block']         = { link = '@markup.raw' },                         -- literal or verbatim text as a stand-alone block
 
     ['@markup.list']              = { fg = syn.builtin2, style = stl.operators },     -- For special punctutation that does not fall in the catagories before
     ['@markup.list.checked']      = { fg = P.green.base },                            -- checked todo-style list markers
@@ -230,15 +230,15 @@ If you want to stay on nvim 0.7, disable the module, or track on 'v0.0.x' branch
     ['@constant.html']                          = { link = '@tag' },
 
     -- Java
-    ['@type.java']                           = { link = '@function' },
+    -- ['@type.java']                           = { link = '@function' },
 
     -- JavaScript
-    ['@constructor.ecma']                    = { link = '@function.method' },
-    ['@property.javascript']                 = { link = '@variable' },
-    ['@type.ecma']                           = { fg = pl.syntax.variable },
-    ['@variable.builtin.javascript']         = { link = '@constant' },
-    ['@operator.ecma']                       = { fg = spec.const, style = stl.operators },
-    ['@variable.javascript']                 = { link = '@constant' },
+    -- ['@constructor.ecma']                    = { link = '@function.method' },
+    -- ['@property.javascript']                 = { link = '@variable' },
+    -- ['@type.ecma']                           = { fg = pl.syntax.variable },
+    -- ['@variable.builtin.javascript']         = { link = '@constant' },
+    -- ['@operator.ecma']                       = { fg = spec.const, style = stl.operators },
+    -- ['@variable.javascript']                 = { link = '@constant' },
 
     -- JSX/TSX
     ['@tag.javascript']                         = FALLBACK_OR_NONE,
@@ -310,11 +310,11 @@ If you want to stay on nvim 0.7, disable the module, or track on 'v0.0.x' branch
     ['@variable.sql']                           = { link = '@constant' },
 
     -- TypeScript
-    ['@constructor.typescript']              = { link = '@function' },
-    ['@property.typescript']                 = { link = '@variable' },
-    ['@type.typescript']                     = { link = '@function' },
-    ['@variable.builtin.typescript']         = { link = '@constant' },
-    ['@variable.typescript']                 = { link = '@constant' },
+    -- ['@constructor.typescript']              = { link = '@function' },
+    -- ['@property.typescript']                 = { link = '@variable' },
+    -- ['@type.typescript']                     = { link = '@function' },
+    -- ['@variable.builtin.typescript']         = { link = '@constant' },
+    -- ['@variable.typescript']                 = { link = '@constant' },
 
     -- VimDoc (vim help files/docs)
     ['@variable.parameter.vimdoc']              = { fg = pl.syntax.variable },
